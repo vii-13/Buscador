@@ -6,7 +6,7 @@ import {
   db,
   googleAuthProvider,
   firebase
-} from './componentes/config/firebase';
+} from './config/firebase';
 import Button from './componentes/Button';
 
 
