@@ -53,7 +53,6 @@ paginaSiguiente = () => {
     const URL = `https://pixabay.com/api/?key=21166249-df6dd5dc586305b77e6a6b598&q=${termino}&
     per_page=30&page=${pagina}`;
 
-    console.log(URL);
     fetch(URL)
     .then(respuesta => respuesta.json() )
     .then(resultado => this.setState({ imagenes : resultado.hits }) )
@@ -73,7 +72,7 @@ paginaSiguiente = () => {
         <div className="jumbotron">
         <div>
           <br/>
-          <p className="lead text-center">Buscador de Imagenes</p>
+          <p className="lead text-center fs-1 fw-bold">Buscador de Imagenes</p>
           <br/>
           <Buscador  
                   datosBusqueda={this.datosBusqueda}
@@ -84,8 +83,8 @@ paginaSiguiente = () => {
                  imagenes={this.state.imagenes}
                  paginaAnterior={this.paginaAnterior}
                  paginaSiguiente={this.paginaSiguiente}
-
                 />
+                <p className="text-center fw-bold">PARA VER RECOMENDACIONES HAS CLICK EN SIGUIENTE</p>
         </div>
         </div>
       </div>

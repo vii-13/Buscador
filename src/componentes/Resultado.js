@@ -8,27 +8,27 @@ class Resultado extends Component {
 
         const imagenes = this.props.imagenes;
 
-        if(imagenes.lenght === 0) return null;
+        if (imagenes.lenght === 0) return null;
 
         //console.log(imagenes);
-        
+
 
         return (
             <React.Fragment>
                 <div className="col-12 p-5 row">
                     {imagenes.map(imagen => (
                         <Imagen
-                        Key={Imagen.id}
-                        imagen={imagen}
+                            Key={Imagen.id}
+                            imagen={imagen}
 
                         />
 
-                    ) ) }
+                    ))}
 
                 </div>
-                <Paginacion 
-                      paginaAnterior={this.props.paginaAnterior}
-                      paginaSiguiente={this.props.paginaSiguiente}
+                <Paginacion
+                    paginaAnterior={this.props.paginaAnterior}
+                    paginaSiguiente={this.props.paginaSiguiente}
                 />
             </React.Fragment>
         )
@@ -36,11 +36,11 @@ class Resultado extends Component {
     }
 
     render() {
-        return ( 
+        return (
             <React.Fragment>
-                {this.mostrarImagenes() }
+                {this.mostrarImagenes()}
             </React.Fragment>
-           
+
         );
     }
 }
