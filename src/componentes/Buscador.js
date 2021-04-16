@@ -21,7 +21,7 @@ class Buscador extends Component{
                 <div className="row">
                     <div className="from-group col-md-8">
                         <input ref= {this.busquedaRef} type="text" className="form-control form-control-lg" 
-                        placeholder="Busca tu imagen. Ejemplo: Cafe" />
+                        placeholder="Busca tu imagen. Ejemplo: Luna" />
                     </div>
 
                     <div className="from-group col-md-4">
