@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import Buscador from './componentes/Buscador';
 import Resultado from './componentes/Resultado';
 
+import {
+  db,
+  googleAuthProvider,
+  firebase
+} from './config/firebase';
+import Button from './componentes/Button';
+
+
 class App extends Component {
 
   state = {
@@ -90,5 +98,37 @@ class App extends Component {
     );
   }
 }
+
+ 
+function app () {
+  const signInWithGoogle = async () => {
+
+
+    // Coloca el lenguaje de preferencia del dispositivo
+    firebase.auth().useDeviceLanguage();
+    
+    // Inicio el procedo de login dentro de un try ... catch
+    
+    try {
+    await firebase.auth().signInWithPopup(googleAuthProvider);
+    
+    } catch (e) {
+    
+    console.error(e.message);
+    
+    }
+    return(
+    <div>
+      <Button onClick={signInWithGoogle} > Sing in with Google</Button>
+    </div> 
+    );
+     
+    }
+
+
+
+}
+
+
 
 export default App;
