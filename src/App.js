@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import Buscador from './componentes/Buscador';
 import Resultado from './componentes/Resultado';
-
-import {
-  db,
-  googleAuthProvider,
-  firebase
-} from './config/firebase';
+import {db, googleAuthProvider,firebase} from './config/firebase';
 import Button from './componentes/Button';
+import BotonSubir from './componentes/BotonSubir';
+
 
 
 class App extends Component {
+
+  
 
   state = {
     termino: '',
@@ -75,15 +74,18 @@ class App extends Component {
   }
   render() {
     return (
+
+
       <div className="container">
         <div className="jumbotron">
+
+      <BotonSubir/>
+
           <div>
             <br />
             <p className="lead text-center fs-1 fw-bold">Buscador de Imagenes</p>
             <br />
-            <Buscador
-              datosBusqueda={this.datosBusqueda}
-            />
+            <Buscador datosBusqueda={this.datosBusqueda}/>
           </div>
           <div className="row content-center">
             <Resultado

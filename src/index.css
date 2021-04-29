@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.card .ver{
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;  
+}
+
+.card:hover > .ver{
+  opacity: 1;
+  visibility: visible;
+}
+
+.card {
+  border-radius: 10%;
+  
+}
+
+.card img{
+  border-radius: 10%;
+}
+
