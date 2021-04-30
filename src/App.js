@@ -8,18 +8,17 @@ import BotonSubir from './componentes/BotonSubir';
 
 
 class App extends Component {
-
-  
-
   state = {
     termino: '',
     imagenes: [],
     pagina: ''
   }
+
   scroll = () => {
     const elemento = document.querySelector('.jumbotron');
     elemento.scrollIntoView('smooth', 'start')
   }
+  
   paginaAnterior = () => {
     //Leer el state de la pagina actual
     let pagina = this.state.pagina;
@@ -39,6 +38,7 @@ class App extends Component {
     //console.log(pagina);
 
   }
+
   paginaSiguiente = () => {
     //Leer el state de la pagina actual
     let pagina = this.state.pagina;
@@ -72,36 +72,37 @@ class App extends Component {
       this.consultarApi();
     })
   }
+
+  
   render() {
     return (
 
-
       <div className="container">
-        <div className="jumbotron">
 
-      <BotonSubir/>
-
-          <div>
-            <br />
+          <div className="menu">
+          <BotonSubir/>
             <p className="lead text-center fs-1 fw-bold">Buscador de Imagenes</p>
-            <br />
+            
             <Buscador datosBusqueda={this.datosBusqueda}/>
           </div>
+
+          <br/>
+
+          <div className="jumbotron">
           <div className="row content-center">
             <Resultado
               imagenes={this.state.imagenes}
               paginaAnterior={this.paginaAnterior}
               paginaSiguiente={this.paginaSiguiente}
             />
-
           </div>
         </div>
       </div>
+
     );
   }
 }
 
- 
 function app () {
   const signInWithGoogle = async () => {
 
@@ -126,9 +127,6 @@ function app () {
     );
      
     }
-
-
-
 }
 
 

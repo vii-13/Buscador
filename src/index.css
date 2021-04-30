@@ -1,36 +1,81 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-
-.card .ver{
+.card .ver {
   position: absolute;
   top: 0;
   opacity: 0;
-  visibility: hidden;  
+  visibility: hidden;
 }
 
-.card:hover > .ver{
+.card:hover > .ver {
   opacity: 1;
   visibility: visible;
 }
 
 .card {
   border-radius: 10%;
-  
 }
 
-.card img{
+.card img {
   border-radius: 10%;
 }
 
+.menu {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  background-position: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.menu p {
+  color: white;
+}
+
+.btnS {
+  margin-top: 7px;
+}
+
+.btnH {
+  margin-top: 7px;
+}
+
+.menu2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./fondo2.jpg);
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  background-position: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.menu2 p {
+  color: white;
+}
+
+.btnB {
+  margin-top: 35px;
+}
