@@ -79,3 +79,15 @@ code {
 .btnB {
   margin-top: 35px;
 }
+
+body {
+  background-color: #34495e;
+}
+
+.jumbotron {
+  padding: 5px;
+}
+
+.spinner {
+  margin-left: 550px;
+}
