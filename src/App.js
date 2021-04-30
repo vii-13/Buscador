@@ -7,11 +7,13 @@ import BotonSubir from './componentes/BotonSubir';
 
 
 
+
 class App extends Component {
   state = {
     termino: '',
     imagenes: [],
     pagina: ''
+
   }
 
   scroll = () => {
@@ -103,7 +105,7 @@ class App extends Component {
   }
 }
 
-function app () {
+
   const signInWithGoogle = async () => {
 
 
@@ -127,7 +129,7 @@ function app () {
     );
      
     }
-}
+
 
 
 
