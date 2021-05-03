@@ -5,7 +5,10 @@ class BotonHome extends Component {
   render() {
     return (
       <div>
-        <Link className="btn btn-lg btn-danger rounded-pill btnH" to="/home">
+        <Link
+          className="btn btn-lg btn-danger rounded-pill btnH"
+          to="/Buscador"
+        >
           Inicio
           <svg
             xmlns="http://www.w3.org/2000/svg"
