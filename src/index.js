@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import "./mvp.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Subir from "./componentes/Subir";
+import Subir from "./upload/Subir";
 
 ReactDOM.render(
   <React.StrictMode>
