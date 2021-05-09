@@ -77,10 +77,10 @@ hr {
   justify-content: var(--justify-important);
 } */
 
-section img,
+/* section img,
 article img {
   max-width: 100%;
-}
+} */
 
 section pre {
   overflow: auto;
