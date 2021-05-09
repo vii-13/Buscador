@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Buscador/static/css/main.b451c689.chunk.css",
+    "main.css": "/Buscador/static/css/main.6bccbcc0.chunk.css",
     "main.js": "/Buscador/static/js/main.8b1ad6b9.chunk.js",
     "main.js.map": "/Buscador/static/js/main.8b1ad6b9.chunk.js.map",
     "runtime-main.js": "/Buscador/static/js/runtime-main.3a832283.js",
@@ -10,14 +10,14 @@
     "static/js/3.22e78598.chunk.js": "/Buscador/static/js/3.22e78598.chunk.js",
     "static/js/3.22e78598.chunk.js.map": "/Buscador/static/js/3.22e78598.chunk.js.map",
     "index.html": "/Buscador/index.html",
-    "static/css/main.b451c689.chunk.css.map": "/Buscador/static/css/main.b451c689.chunk.css.map",
+    "static/css/main.6bccbcc0.chunk.css.map": "/Buscador/static/css/main.6bccbcc0.chunk.css.map",
     "static/js/2.c11b8d7f.chunk.js.LICENSE.txt": "/Buscador/static/js/2.c11b8d7f.chunk.js.LICENSE.txt",
     "static/media/index.css": "/Buscador/static/media/fondo2.37f72016.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.3a832283.js",
     "static/js/2.c11b8d7f.chunk.js",
-    "static/css/main.b451c689.chunk.css",
+    "static/css/main.6bccbcc0.chunk.css",
     "static/js/main.8b1ad6b9.chunk.js"
   ]
 }
