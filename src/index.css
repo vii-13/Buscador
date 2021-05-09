@@ -142,3 +142,7 @@ section aside:hover img {
 .card:hover img {
   filter: opacity(0.3);
 }
+
+aside img {
+  border-radius: 15px;
+}
